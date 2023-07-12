@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Animation_image</title>
+    <style>
+      .rotate {
+        animation: rotation 2s;
+      }
+      .rotate-image {
+        animation: rotation 2s linear infinite;
+      }
+      .infinite {
+        animation-iteration-count: infinite;
+      }
+      .linear {
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="/CSS_animation_image/Image.jpg"
+      class="rotate linear infinite"
+      width="150"
+      height="150"
+    />
+  </body>
+</html>

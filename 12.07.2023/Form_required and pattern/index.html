@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-required and pattern</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="Username"><b>Username: </b></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              pattern="[a-z]"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <br />
+        <tr>
+          <td>
+            <label for="email"><b>Email: </b></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Emailaddress"
+              name="Email"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <br />
+        <tr>
+          <td>
+            <label for="password"><b>Password: </b></label>
+          </td>
+          <td>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              pattern="[a-z]{1,15}"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <br />
+        <tr>
+          <td>
+            <label for="address"><b>Address</b></label>
+          </td>
+          <td>
+            <textarea name="address" placeholder="Address" cols="21" rows="5">
+            </textarea>
+          </td>
+        </tr>
+        <td><button type="submit">Register</button></td>
+        <td><button type="reset">Cancel</button></td>
+      </table>
+    </form>
+  </body>
+</html>
